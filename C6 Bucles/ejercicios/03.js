@@ -3,6 +3,9 @@ function obtenerMayor(x, y) {
   // Retorna el número más grande.
   // Si son iguales, retornar cualquiera de los dos.
   // Tu código:
+  if (x < y) { return y }
+  else if (y < x) { return x }
+  else if (x == y) { return x }
 }
-
+console.log ( obtenerMayor(1000,1000))
 module.exports = obtenerMayor;

@@ -6,6 +6,15 @@ function combine(str1, str2, str3) {
    // combine("abc", "", "123") == "a1b2c3"
    // combine("abc", "12345", "") == "a1b2c345"
    // combine("abc", "12345", "67") == "a16b27c345"
+  respuesta = ""
+  maximo = Math.max(str1.length, str2.length , str3.length)
+  for (i = 0; i <= maximo ;i ++){
+     if (str1[i] !== undefined ) respuesta += str1[i]
+     if (str2[i] !== undefined ) respuesta += str2[i]
+     if (str3[i] !== undefined ) respuesta += str3[i]
+     
+  }
+  return respuesta
 }
 
 module.exports = combine;
